@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 id="">BookShelf-App</h2>
+        <nav id="nav-container">
+            <ul>
+                <li>Home</li>
+                <li>Books</li>
+                <li>Archieve</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- add books feature -->
+         <section>
+            <h2 class="form-header">Add Books</h2>
+            <div class="form-container">
+                <form id="input-new-book">
+                    <div class="form-group">
+                        <label id="label-book-title">Book's Title</label>
+                        <input 
+                        type="text",
+                        id="input-book-title"
+                        required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-author-name">Author's Name</label>
+                        <input 
+                        type="text",
+                        id="input-book-author",
+                        required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-book-year">Year Published</label>
+                        <input 
+                        type="number",
+                        id="input-book-year",
+                        required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label id="label-finished-book">Finished ?</label>
+                        <input type="checkbox"
+                        id="checkbox-book-finished",
+                        >
+                    </div>
+
+                    <button type="submit">Submit Book</button>
+                </form>
+            </div>
+         </section>
+
+         <!-- not finished book -->
+         <section>
+            <h2 class="form-header">Unfinished Books</h2>
+            <div class="unfinished-book-container">
+                <ul id="unfinished-book-list">
+                    <li>
+                        <h3 class="book-name">HarryPotter</h3>
+                        <p class="book-author">JK Rownling</p>
+                        <p class="book-year">1945</p>
+
+                        <button type="button" class="finished-button">Finished</button>
+                        <button type="button" class="delete-button">Delete</button>
+                    </li>
+                </ul>
+            </div>
+         </section>
+
+         <!-- finished book -->
+         <section>
+            <h2 class="form-header">Finished Books</h2>
+            <div class="finished-book-container">
+                <ul id="finished-book-list">
+                    <li>
+                        <h3 class="book-name">HarryPotter2</h3>
+                        <p class="book-author">JK Rownling2</p>
+                        <p class="book-year">1945</p>
+
+                        <button type="button" class="undo-button">Undo</button>
+                        <button type="button" class="delete-button">Delete</button>
+                    </li>
+                </ul>
+            </div>
+         </section>
+
+         <!-- search book feature -->
+         <section>
+            <h2 class="form-header">Search Books</h2>
+            <div class="search-container">
+                <form class="form-container">
+                    <label id="label-search">Search Books</label>
+                    <input type="text",
+                    id="input-book-search"
+                    >
+                </form>
+            </div>
+         </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
